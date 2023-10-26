@@ -9,7 +9,6 @@ interface RowProps {
   onValueChange: (index: number, value: number) => void;
 }
 
-// eslint-disable-next-line react-refresh/only-export-components
 const Row: React.FC<RowProps> = ({
   index,
   name,
@@ -39,5 +38,4 @@ const Row: React.FC<RowProps> = ({
   );
 };
 
-// eslint-disable-next-line react-refresh/only-export-components
 export default React.memo(Row);
