@@ -28,11 +28,10 @@ const App: React.FC = () => {
     const handleDeleteRow = useCallback(
     (index: number) => {
         setRows((prevRows) => {
-            const updatedRows = prevRows.filter((_, i) => i !== index);
-            return updatedRows;
+            return prevRows.filter((_, i) => i !== index);
         });
     },
-    [setRows, totalValue, newRowName]
+    [setRows]
     );
 
     const handleValueChange = (index: number, newValue: number): void => {
